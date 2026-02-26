@@ -26,3 +26,9 @@ jobs:
           composer install --no-dev
           php artisan migrate --force
           php artisan optimize
+
+          - name: Debug secrets
+  run: |
+    echo "Host: ${{ secrets.SERVER_IP }}"
+    echo "User: ${{ secrets.SERVER_USER }}"
+    echo "Port: ${{ secrets.SSH_PORT }}"
