@@ -26,4 +26,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::post('/post/comment/{post}', [CommentController::class, 'makeComment'])->name('post.comment');
     Route::resource('/comment', CommentController::class, ['only' => ['destroy']]);
+    
+});
+Route::get('/profile', function () {
+    return view('profile');
 });
