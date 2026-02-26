@@ -3,7 +3,7 @@
         <main class="w-full flex-grow p-8">
             <div class="flex items-center mb-8">
                 <i class="fas fa-chart-bar text-blue-600 text-2xl mr-3"></i>
-                <h1 class="text-2xl font-semibold text-gray-800">Statistics</h1>
+                <h1 class="text-2xl font-semibold text-gray-800">ini statistic</h1>
             </div>
 
             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
