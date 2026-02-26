@@ -28,6 +28,6 @@ Route::middleware('auth')->group(function () {
     Route::resource('/comment', CommentController::class, ['only' => ['destroy']]);
     
 });
-Route::get('/profile', function () {
-    return view('profile');
+Route::get('/gorden', function () {
+    return view('gorden');
 });
